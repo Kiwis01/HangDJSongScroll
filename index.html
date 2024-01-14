@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang The Dj</title>
+</head>
+
+<body>
+    <h1>Hang The Dj</h1>
+    <p>Search for the song you would like to request</p>
+
+    <input type="text" id="songSearch" placeholder="Enter song name">
+    <button onclick="searchSong()">Search</button>
+
+    <script type="module" src="app.js"></script>
+
+    <script>
+        function searchSong() {
+            const songName = document.getElementById("songSearch").value;
+            getTrack(songName);
+        }
+    </script>
+</body>
+
+</html>
